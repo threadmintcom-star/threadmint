@@ -39,7 +39,7 @@ export async function POST(req: Request) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "orders@threadmint.com",
+      from: process.env.FROM_EMAIL ?? "onboarding@resend.dev",
       to: orderEmail,
       reply_to: email,
       subject,
