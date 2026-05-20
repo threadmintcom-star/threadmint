@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const DESIGNS = [
   {
@@ -7,7 +8,8 @@ const DESIGNS = [
     price: 29,
     tag: "Bestseller",
     desc: "Clean geometric wave print on premium cotton.",
-    color: "bg-emerald-50",
+    img: "/designs/minimal-wave.svg",
+    bg: "bg-emerald-50",
   },
   {
     id: 2,
@@ -15,7 +17,8 @@ const DESIGNS = [
     price: 29,
     tag: "New",
     desc: "Bold grid pattern inspired by city blueprints.",
-    color: "bg-sky-50",
+    img: "/designs/urban-grid.svg",
+    bg: "bg-slate-900",
   },
   {
     id: 3,
@@ -23,7 +26,8 @@ const DESIGNS = [
     price: 32,
     tag: "",
     desc: "Delicate leaf illustration, sustainably printed.",
-    color: "bg-lime-50",
+    img: "/designs/botanical.svg",
+    bg: "bg-lime-50",
   },
   {
     id: 4,
@@ -31,7 +35,8 @@ const DESIGNS = [
     price: null,
     tag: "Popular",
     desc: "Your artwork, your words, your way.",
-    color: "bg-violet-50",
+    img: "/designs/your-design.svg",
+    bg: "bg-violet-50",
     cta: "Start Designing",
     href: "/order",
   },
@@ -119,12 +124,14 @@ export default function Home() {
               key={d.id}
               className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow"
             >
-              <div
-                className={`${d.color} h-52 flex items-center justify-center`}
-              >
-                <span className="text-3xl opacity-20 font-black uppercase tracking-widest text-gray-400 select-none px-4 text-center">
-                  {d.name}
-                </span>
+              <div className={`${d.bg} h-52 flex items-center justify-center overflow-hidden`}>
+                <Image
+                  src={d.img}
+                  alt={d.name}
+                  width={200}
+                  height={200}
+                  className="object-contain h-48 w-48"
+                />
               </div>
               <div className="p-4">
                 <div className="flex items-center justify-between mb-1">

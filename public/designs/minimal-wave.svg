@@ -1,10 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
-  <rect width="400" height="400" fill="#f0fdf4"/>
-  <!-- Wave lines -->
-  <path d="M 20 160 Q 80 120 140 160 Q 200 200 260 160 Q 320 120 380 160" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
-  <path d="M 20 190 Q 80 150 140 190 Q 200 230 260 190 Q 320 150 380 190" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
-  <path d="M 20 220 Q 80 180 140 220 Q 200 260 260 220 Q 320 180 380 220" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
-  <path d="M 20 250 Q 80 210 140 250 Q 200 290 260 250 Q 320 210 380 250" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
-  <!-- Label -->
-  <text x="200" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#6b7280" letter-spacing="3">MINIMAL WAVE</text>
+  <!-- T-shirt body -->
+  <path d="M 130,55 C 160,55 170,75 200,75 C 230,75 240,55 270,55
+    L 320,65 L 370,85 L 390,140 L 355,150 L 355,355 L 45,355 L 45,150 L 10,140 L 30,85 L 80,65 Z"
+    fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+  <!-- Collar -->
+  <path d="M 130,55 C 155,85 175,90 200,90 C 225,90 245,85 270,55"
+    fill="none" stroke="#e5e7eb" stroke-width="1.5"/>
+  <!-- Wave design on chest -->
+  <g transform="translate(200,215)">
+    <path d="M -90,0 Q -60,-30 -30,0 Q 0,30 30,0 Q 60,-30 90,0" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+    <path d="M -90,22 Q -60,-8 -30,22 Q 0,52 30,22 Q 60,-8 90,22" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M -90,44 Q -60,14 -30,44 Q 0,74 30,44 Q 60,14 90,44" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <text x="0" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#9ca3af" letter-spacing="3">MINIMAL WAVE</text>
+  </g>
 </svg>
