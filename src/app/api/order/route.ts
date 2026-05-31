@@ -9,11 +9,11 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
-  const orderEmail = process.env.ORDER_EMAIL ?? "jalaleddine98@gmail.com";
-  const brevoKey = process.env.BREVO_API_KEY;
+  const orderEmail = process.env.ORDER_EMAIL ?? "threadmint.com@gmail.com";
+  const resendKey = process.env.RESEND_API_KEY;
 
-  if (!brevoKey) {
-    console.error("BREVO_API_KEY not set");
+  if (!resendKey) {
+    console.error("RESEND_API_KEY not set");
     return NextResponse.json({ error: "Mailer not configured" }, { status: 500 });
   }
 
@@ -32,25 +32,24 @@ export async function POST(req: Request) {
     <p style="font-family:sans-serif;font-size:13px;color:#888;margin-top:16px">Reply to this email to send the customer a payment link.</p>
   `;
 
-  const fromEmail = process.env.FROM_EMAIL ?? "orders@threadmint.com";
-  const res = await fetch("https://api.brevo.com/v3/smtp/email", {
+  const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
-      "api-key": brevoKey,
+      "Authorization": `Bearer ${resendKey}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      sender: { name: "ThreadMint Orders", email: fromEmail },
-      to: [{ email: orderEmail }],
-      replyTo: { email },
+      from: "ThreadMint Orders <onboarding@resend.dev>",
+      to: [orderEmail],
+      reply_to: email,
       subject,
-      htmlContent: html,
+      html,
     }),
   });
 
   if (!res.ok) {
     const err = await res.text();
-    console.error("Brevo error:", err);
+    console.error("Resend error:", err);
     return NextResponse.json({ error: "Email failed" }, { status: 500 });
   }
 
