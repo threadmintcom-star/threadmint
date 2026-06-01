@@ -7,14 +7,24 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ThreadMint — Wear Your Idea",
+  title: "ThreadMint — Custom T-Shirts Printed & Shipped Fast",
   description:
-    "Custom t-shirts printed on demand. Browse our designs or submit your own.",
+    "Custom t-shirts starting at €29. Pick a design or upload your own. Printed on 180g premium cotton and shipped across Europe in 3-5 days. No minimum order.",
+  keywords: "custom t-shirts, print on demand, custom merch, team shirts, personalised t-shirts, Europe shipping, Finland",
   openGraph: {
-    title: "ThreadMint — Wear Your Idea",
-    description: "Custom t-shirts printed on demand.",
+    title: "ThreadMint — Custom T-Shirts Printed & Shipped Fast",
+    description:
+      "Custom t-shirts from €29. Pick a design or upload your own. Shipped across Europe in 3-5 days.",
     type: "website",
+    url: "https://threadmint.net",
+    siteName: "ThreadMint",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "ThreadMint — Custom T-Shirts",
+    description: "Custom t-shirts from €29. Printed on premium cotton. Ships across Europe in 3-5 days.",
+  },
+  metadataBase: new URL("https://threadmint.net"),
 };
 
 export default function RootLayout({
