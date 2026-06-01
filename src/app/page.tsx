@@ -195,6 +195,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Trust / Sustainability strip */}
+      <section className="border-y border-gray-100 py-12">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="grid sm:grid-cols-3 gap-8 text-center">
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-2xl">🌱</span>
+              <h3 className="font-bold text-sm">Water-based inks</h3>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                We print with eco-friendly water-based inks — gentler on fabric, gentler on the planet.
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-2xl">📦</span>
+              <h3 className="font-bold text-sm">No bulk required</h3>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Order one shirt or a hundred. No minimums, no waste. Pay only for what you need.
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-2xl">🇫🇮</span>
+              <h3 className="font-bold text-sm">Printed in Finland</h3>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Fulfilled locally, shipped across Europe. Short supply chain, lower footprint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="max-w-6xl mx-auto px-4 py-20 text-center">
         <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
