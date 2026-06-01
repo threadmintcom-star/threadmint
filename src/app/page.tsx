@@ -195,6 +195,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Team/B2B banner */}
+      <section className="bg-gray-900 text-white py-14">
+        <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div>
+            <span className="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-3 block">For teams &amp; events</span>
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-3">
+              Matching shirts for your whole crew
+            </h2>
+            <p className="text-gray-400 text-sm max-w-md leading-relaxed">
+              Startup offsites, hackathons, conference staff, team gifts — we handle small runs and large orders alike.
+              Order 10+ and get 10% off automatically.
+            </p>
+          </div>
+          <Link
+            href="/order"
+            className="shrink-0 bg-emerald-500 text-white px-8 py-3.5 rounded-full font-semibold text-sm hover:bg-emerald-400 transition-colors whitespace-nowrap"
+          >
+            Get a team quote
+          </Link>
+        </div>
+      </section>
+
       {/* Trust / Sustainability strip */}
       <section className="border-y border-gray-100 py-12">
         <div className="max-w-5xl mx-auto px-4">

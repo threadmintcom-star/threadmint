@@ -194,7 +194,7 @@ function OrderForm() {
 
       {status === "error" && (
         <p className="text-red-500 text-sm">
-          Something went wrong. Please email us at hello@threadmint.com.
+          Something went wrong. Please email us at threadmint.com@gmail.com.
         </p>
       )}
 
@@ -269,10 +269,10 @@ export default function OrderPage() {
             <p className="text-sm text-gray-600">
               Email us at{" "}
               <a
-                href="mailto:hello@threadmint.com"
+                href="mailto:threadmint.com@gmail.com"
                 className="text-emerald-600 underline"
               >
-                hello@threadmint.com
+                threadmint.com@gmail.com
               </a>
             </p>
           </div>
