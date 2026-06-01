@@ -31,7 +31,7 @@ const FAQS = [
   },
   {
     q: "Can I order in bulk?",
-    a: "Yes. Orders of 10+ shirts get 10% off automatically. For larger quantities, contact us at hello@threadmint.com for a custom quote.",
+    a: "Yes. Orders of 10+ shirts get 10% off automatically. For larger quantities, contact us at threadmint.com@gmail.com for a custom quote.",
   },
   {
     q: "What is your return policy?",
@@ -49,7 +49,7 @@ export default function FAQPage() {
       <h1 className="text-3xl font-extrabold mb-2">FAQ</h1>
       <p className="text-gray-500 mb-12">
         Can't find your answer?{" "}
-        <a href="mailto:hello@threadmint.com" className="text-emerald-600 underline">
+        <a href="mailto:threadmint.com@gmail.com" className="text-emerald-600 underline">
           Email us
         </a>
         .

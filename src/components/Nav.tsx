@@ -16,6 +16,9 @@ export default function Nav() {
           <Link href="/shop" className="hover:text-emerald-500 transition-colors">
             Shop
           </Link>
+          <Link href="/teams" className="hover:text-emerald-500 transition-colors">
+            For Teams
+          </Link>
           <Link href="/order" className="hover:text-emerald-500 transition-colors">
             Custom Order
           </Link>
@@ -42,6 +45,9 @@ export default function Nav() {
         <div className="md:hidden px-4 pb-4 flex flex-col gap-4 text-sm font-medium border-t border-gray-100 pt-4">
           <Link href="/shop" onClick={() => setOpen(false)}>
             Shop
+          </Link>
+          <Link href="/teams" onClick={() => setOpen(false)}>
+            For Teams
           </Link>
           <Link href="/order" onClick={() => setOpen(false)}>
             Custom Order
