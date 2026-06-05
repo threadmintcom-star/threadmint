@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Team & Event Shirts — ThreadMint",
   description:
-    "Custom t-shirts for startup teams, hackathons, and events. No minimums, €29/shirt, shipped across Europe in 3-5 days. 10% off orders of 10+.",
+    "Merch your team will actually wear. Custom t-shirts that carry your company or event identity — no minimums, €29/shirt, shipped across Europe in 3-5 days.",
 };
 
 const USES = [
@@ -43,7 +43,7 @@ const STEPS = [
   {
     n: "3",
     title: "Production & delivery",
-    body: "Production starts same day. Shirts ship in 3-5 business days to any EU address.",
+    body: "Local Helsinki production starts same day. Shirts ship in 3–5 business days to any EU address.",
   },
 ];
 
@@ -60,8 +60,9 @@ export default function TeamsPage() {
             Shirts your team<br />will actually wear.
           </h1>
           <p className="text-gray-400 text-lg max-w-lg mx-auto mb-10">
-            Custom t-shirts for startups, hackathons, and corporate events.
-            No minimums. €29/shirt. Ships across Europe in 3-5 days.
+            Merch that carries your company or event identity — not just a shirt
+            with a logo. No minimums. €29/shirt. Printed in Helsinki and shipped
+            across Europe in 3–5 days.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -83,7 +84,7 @@ export default function TeamsPage() {
       {/* Pricing callout */}
       <section className="border-b border-gray-100 py-10 bg-emerald-50">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="grid sm:grid-cols-3 gap-6 text-center">
+          <div className="grid sm:grid-cols-4 gap-6 text-center">
             <div>
               <p className="text-3xl font-extrabold text-gray-900">€29</p>
               <p className="text-sm text-gray-500 mt-1">per shirt (pre-made)</p>
@@ -96,13 +97,17 @@ export default function TeamsPage() {
               <p className="text-3xl font-extrabold text-gray-900">0</p>
               <p className="text-sm text-gray-500 mt-1">minimum order</p>
             </div>
+            <div>
+              <p className="text-3xl font-extrabold text-gray-900">3–5</p>
+              <p className="text-sm text-gray-500 mt-1">days Helsinki → EU</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Use cases */}
       <section className="max-w-5xl mx-auto px-4 py-20">
-        <h2 className="text-2xl font-bold text-center mb-12">Built for every team situation</h2>
+        <h2 className="text-2xl font-bold text-center mb-12">Merch that makes your identity real</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {USES.map((u) => (
             <div key={u.title} className="bg-gray-50 rounded-2xl p-6">
