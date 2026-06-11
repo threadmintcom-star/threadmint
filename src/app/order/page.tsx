@@ -265,6 +265,22 @@ export default function OrderPage() {
           </div>
 
           <div className="bg-emerald-50 rounded-2xl p-6">
+            <h3 className="font-semibold mb-1">Need a design?</h3>
+            <p className="text-sm text-gray-600 mb-3">
+              We can help you create something your team will actually wear — not
+              just a logo on a shirt.
+            </p>
+            <a
+              href="https://recraft.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-emerald-500 text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors"
+            >
+              Try our free AI design tool →
+            </a>
+          </div>
+
+          <div className="bg-gray-50 rounded-2xl p-6">
             <h3 className="font-semibold mb-1">Questions?</h3>
             <p className="text-sm text-gray-600">
               Email us at{" "}

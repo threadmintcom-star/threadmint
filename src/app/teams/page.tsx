@@ -61,8 +61,8 @@ export default function TeamsPage() {
           </h1>
           <p className="text-gray-400 text-lg max-w-lg mx-auto mb-10">
             Merch that carries your company or event identity — not just a shirt
-            with a logo. No minimums. €29/shirt. Printed in Helsinki and shipped
-            across Europe in 3–5 days.
+            with a logo. No minimums. €29/shirt. Unlike global platforms, we print
+            in Helsinki — 2–5 day delivery, no customs delays.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
